@@ -9,5 +9,52 @@
 }
 body{
     background-color: #212121;
+}
+
+a{
+    list-style-type: none;
+    text-decoration: none;
+}
+#buutonBackPage{
+    position: fixed;
+    bottom: 20px;
+    width: 150px;
+    background-color: #212121;
+    color: #fff;
+    font-size: 25px ;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+#buutonBackPage:hover {
+    font-size: 25px ;
+    border: 3px solid #fff;
 
 }
+
+#video{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 0;
+    height: 50vh;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        height: 200vh;
+    }
+    #size{
+        justify-content: space-around;
+        margin: 30px;
+    }
+
+}
+
