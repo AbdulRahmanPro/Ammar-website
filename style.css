@@ -15,6 +15,7 @@
     border-radius: 10px;
     background-color: #4267B2;
     transition: 0.5s;
+    font-size: 30px;
 
 }
 
@@ -112,153 +113,53 @@ a {
     left: 60%;
 }
 
-.wrapper .button{
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  float: left;
-  margin: 0 5px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-  transition: all 0.3s ease-out;
+.main{
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.wrapper .button:hover{
-  width: 200px;
+.icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background: #fff;
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 100px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+    transition: all .3s ease-out;
 }
-.wrapper .button .icon{
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50px;
-  box-sizing: border-box;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
+.icon:hover{
+    width: 290px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
 }
-.wrapper .button:nth-child(1):hover .icon{
-  background: #4267B2;
+.icon:hover i{
+    color: #fff;
 }
-.wrapper .button:nth-child(2):hover .icon{
-    background: #ff0000;
+.icon .fa-facebook-f{
+    color: #1A6ED8;
 }
-.wrapper .button:nth-child(3):hover .icon{
-  background: #E1306C;
-}
-.wrapper .button:nth-child(4):hover .icon{
-  background: #333;
-}
-.wrapper .button:nth-child(5):hover .icon{
-  background: #ff0000;
-}
-.wrapper .button .icon i{
-  font-size: 25px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:hover .icon i{
-  color: #fff;
-}
-.wrapper .button span{
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 60px;
-  margin-left: 10px;
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:nth-child(1) span{
-  color: #4267B2;
-}
-.wrapper .button:nth-child(2) span{
-  color: #ff0000    ;
-}
-.wrapper .button:nth-child(3) span{
-  color: #E1306C;
-}
-.wrapper .button:nth-child(4) span{
-  color: #333;
-}
-.wrapper .button:nth-child(5) span{
-  color: #ff0000;
+.fb:hover{
+    background: #1A6ED8;
 }
 
-@media screen and (max-width: 600px) {
-    #Title{
-        position: relative;
-        top:10vh;
-    }
-    #menubtn{
-        display: block;
-        padding: 20px 20px 20px 20px;
-        direction: ltr;
-    }
-    .iconMenu{
-        display: block;
-    }
-    #Navbar  {
-        height: 69vh;
-        display: none;
-    }
-    #Navbar.active {
-        display: block;
-    }
-    #Navbar ul li {
-        padding: 20px 0;
-    }
-    ul ,nav{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #Icon{
-        position: relative;
-        left: 3%;
-    }
-    .fromInput{
-        position: relative;
-        left: 6%;
-    }
-    #HomeAbout{
-        height: 100%;
-    }
-    #content{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    #Img{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        top: 10vh;
-        
-    }
-    #IMG{
-        width: 70vh;
-    }
-
-    p{
-        width: 100%;    
-    }
-    #HomeAbout
-    {
-        height: 200vh;
-    }
-    #louct{
-        position: absolute;
-        top: 160vh;
-        left: 40%;
-    }
-    
+.icon .fa-youtube{
+    color: #FE0000;
 }
+.yt:hover{
+    background: #FE0000;
+}   
 
-/* @media screen and (max-width: 800px) {
-
+@media only screen and (min-width: 453px) and  (max-width: 900px) {
     #menubtn{
         display: block;
         padding: 20px 20px 20px 20px;
@@ -282,14 +183,14 @@ a {
         align-items: center;
     }
     #HomeAbout{
-        height: 150vh;
+        height: 190vh;
     }
     #Img{
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        top: 10vh;
+        top: 1vh;
         
     }
     #content{
@@ -303,5 +204,27 @@ a {
         position: absolute;
         top: 180vh;
         left: 40%;
-    } */
+    }
+    #IMG-co{
+        width: 480PX;
+    }
+    #contenuText{
+        position: relative;
+        bottom: 20vh;
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .icon{
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        justify-content: center;
+        
+    }
+
 }
+
